@@ -23,11 +23,10 @@ public class Main {
             " prophets, is ready to use his wit against any who dare.");
 
         boolean battleOngoing = true;
+        Random random = new Random();
         System.out.println("Battle begins!");
         while(battleOngoing) {
-            Random random = new Random();
             int nextEvent = random.nextInt(4);
-
             switch(nextEvent) {
                 case 0:
                     fighter1.attack(fighter2);
